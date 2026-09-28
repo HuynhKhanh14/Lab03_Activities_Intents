@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="32dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập đường link trang web"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:layout_marginTop="80dp"/>
+
+    <EditText
+        android:id="@+id/edtUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="http://www.tdt.edu.vn"
+        android:textSize="18sp"
+        android:inputType="textUri"
+        android:backgroundTint="#E91E63"
+        android:autofillHints="url"/>
+
+    <Button
+        android:id="@+id/btnOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingStart="32dp"
+        android:paddingEnd="32dp"
+        android:text="MỞ TRÌNH DUYỆT"
+        android:backgroundTint="#DDDDDD"
+        android:textColor="#000000"/>
+</LinearLayout>

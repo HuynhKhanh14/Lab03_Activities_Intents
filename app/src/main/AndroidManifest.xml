@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:targetApi="31">
+
+        <!-- MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ===== BÀI 01 ===== -->
+        <activity android:name=".bai01.LoginActivity" android:exported="false" />
+        <activity android:name=".bai01.NameActivity" android:exported="false" />
+
+        <!-- ===== BÀI 02 ===== -->
+        <activity android:name=".bai02.OpenBrowserActivity" android:exported="false" />
+
+        <!-- ===== BÀI 03: Đăng ký như trình duyệt ===== -->
+        <activity
+            android:name=".bai03.MyWebBrowserActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <!-- ===== BÀI 04 ===== -->
+        <activity android:name=".bai04.ProfileActivity" android:exported="false" />
+        <activity android:name=".bai04.EditProfileActivity" android:exported="false" />
+
+    </application>
+
+</manifest>

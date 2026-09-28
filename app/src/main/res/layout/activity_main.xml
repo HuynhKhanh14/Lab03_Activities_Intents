@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LAB 03 - Activities &amp; Intents"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#3F51B5"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/btnBai1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bài 01 - Login / Name"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnBai2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bài 02 &amp; 03 - Web Browser"
+        android:layout_marginBottom="12dp"/>
+
+    <Button
+        android:id="@+id/btnBai4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bài 04 - Profile"/>
+</LinearLayout>

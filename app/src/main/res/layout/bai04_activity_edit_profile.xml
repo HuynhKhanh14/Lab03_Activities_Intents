@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Avatar -->
+        <ImageView
+            android:id="@+id/imgAvatarEdit"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:scaleType="centerCrop"
+            android:background="?attr/selectableItemBackground"/>
+
+        <TextView
+            android:id="@+id/tvHeaderEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="edward_larry"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="30dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="💼  " android:textSize="18sp"/>
+            <EditText android:id="@+id/edtTitle"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="Title"
+                android:textSize="16sp" android:backgroundTint="#3F51B5"
+                android:autofillHints=""/>
+        </LinearLayout>
+
+        <!-- Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="👤  " android:textSize="18sp"/>
+            <EditText android:id="@+id/edtName"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="Name"
+                android:textSize="16sp" android:backgroundTint="#3F51B5"
+                android:autofillHints="name"/>
+        </LinearLayout>
+
+        <!-- Phone -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="📞  " android:textSize="18sp"/>
+            <EditText android:id="@+id/edtPhone"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="Phone"
+                android:inputType="phone" android:textSize="16sp"
+                android:backgroundTint="#3F51B5"
+                android:autofillHints="phone"/>
+        </LinearLayout>
+
+        <!-- Email -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="✉  " android:textSize="18sp"/>
+            <EditText android:id="@+id/edtEmail"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="Email"
+                android:inputType="textEmailAddress" android:textSize="16sp"
+                android:backgroundTint="#3F51B5"
+                android:autofillHints="email"/>
+        </LinearLayout>
+
+        <!-- Address -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🏠  " android:textSize="18sp"/>
+            <EditText android:id="@+id/edtAddress"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="Address"
+                android:textSize="16sp" android:backgroundTint="#3F51B5"
+                android:autofillHints="postalAddress"/>
+        </LinearLayout>
+
+        <!-- Homepage -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="🔗  " android:textSize="18sp"/>
+            <EditText android:id="@+id/edtHomepage"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:hint="Homepage"
+                android:inputType="textUri" android:textSize="16sp"
+                android:backgroundTint="#3F51B5"
+                android:autofillHints="url"/>
+        </LinearLayout>
+
+        <!-- Nút Save -->
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="💾  SAVE"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>
